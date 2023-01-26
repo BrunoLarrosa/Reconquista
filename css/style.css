@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Body ---------- */
+body {
+    min-height:1000px ;
+}
+/* ------------------------- */
+
+/* ---------- NavBar ---------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.9s;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: black;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+header .logo {
+    position: relative;
+    height: 50px;
+    width: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.9s;
+}
+
+header.sticky .logo {
+    color: #fff;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.9s ;
+}
+
+header.sticky ul li a {
+    color: #fff;
+}
+
+/* ---------------------------- */
+
+/* ---------- Titulo ----------*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/principal.png');
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+
+.banner h2 a {
+    color: orange;
+    text-decoration: none;
+}
+
+.banner h2 a:hover {
+    color: red;
+}
+
+/* ---------------------------- */
+
+/* ---------- Nosotros ----------*/
+
+.sec {
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    margin-top: -250px;
+
+}
+
+.sec .content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.mxw800p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px ;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.services {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.services .box {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+}
+
+.services .box .iconBx {
+    margin-top: 25px;
+
+}
+
+.services .box .iconBx img {
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ---------------------------- */
+
+/* ---------- Productos ----------*/
+
+.proBx {
+    position: relative;
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.proBx .brand1 {
+    position: relative;
+    background-image: url(/img/1.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+}
+
+.proBx .brand1:hover {
+    background-image: url(/img/1.png);
+}
+
+.proBx .brand1 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand1:hover a {
+    color: rgba(255,255,255,1);
+}
+
+
+.proBx .brand2 {
+    position: relative;
+    background-image: url(/img/2.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proBx .brand2:hover {
+    background-image: url(/img/2.png);
+}
+
+.proBx .brand2 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand2:hover a {
+    color: rgba(255,255,255,1);
+}
+
+.proBx .brand3 {
+    position: relative;
+    background-image: url(/img/3.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.proBx .brand3:hover {
+    background-image: url(/img/3.png);
+}
+
+.proBx .brand3 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand3:hover a {
+    color: rgba(255,255,255,1);
+}
+
+.proBx .brand4 {
+    position: relative;
+    background-image: url(/img/4.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proBx .brand4:hover {
+    background-image: url(/img/4.png);
+}
+
+.proBx .brand4 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand4:hover a {
+    color: rgba(255,255,255,1);
+}
+
+.proBx .brand5 {
+    position: relative;
+    background-image: url(/img/5.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proBx .brand5:hover {
+    background-image: url(/img/5.png);
+}
+
+.proBx .brand5 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand5:hover a {
+    color: rgba(255,255,255,1);
+}
+
+.proBx .brand6 {
+    position: relative;
+    background-image: url(/img/6.png);
+    min-height: 400px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.proBx .brand6:hover {
+    background-image: url(/img/6.png);
+}
+
+.proBx .brand6 a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px ;
+}
+
+.proBx .brand6:hover a {
+    color: black;
+}
+.productos {
+    background: #000;
+    padding-top: 250px;
+    margin-top: -330px;
+}
+
+.productos h3,
+.productos p {
+    color: #fff;
+}
+
+/* ---------- Ubicacion ----------*/
+
+.ubicacion {
+    padding-top: 250px;
+    margin-top: -330px;
+    background: #000;
+}
+
+.ubicacion_mapa {
+    display: flex ;
+    justify-content: center;
+    max-width: 100%;
+    margin-top: 40px;
+}
+ 
+.ubicacion h3,
+.ubicacion p {
+    color: #fff;
+}
+
+/* ---------- CONTACTO ----------*/
+
+
+.contacto {
+    background: white;
+    padding-top: 250px;
+    margin-top: -460px;
+}
+
+.contacto h3 ,
+.contacto p {
+    color: #000;
+}
+
+.contacto p {
+    font-size: 2px
+}
+
+.formContacto {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.formContacto form {
+    width: 100%;
+}
+
+.formContacto .row100 {
+    display: flex;
+    width: 100%;
+}
+
+.formContacto .row100 .inputBx50 {
+    width: 50%;
+    margin: 0 20px;
+}
+
+.formContacto .row100 .inputBx100 {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.formContacto .row100 input,
+.formContacto .row100 textarea {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    background: transparent;
+    width: 100%;
+    padding-top: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+}
+
+.formContacto .row100 textarea {
+    height: 100px;
+}
+
+.formContacto .row100 input::placeholder,
+.formContacto .row100 textarea::placeholder {
+    color: rgb(122, 122, 122);
+}
+
+.formContacto .row100 .btn {
+    background: #000;
+    color: #fff;
+    max-width: 200px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.sci ul {
+    display: flex;
+}
+
+.sci ul li {
+    list-style: none;
+}
+
+.sci ul li a {
+    text-decoration: none;
+display: inline-block;
+margin: 0 30px;
+
+}
+
+.sci ul li a img {
+    max-width: 100px;
+}
+
+
+/* ---------- TOGGLE ----------*/
+
+.toggle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .toggle 
+    {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: white;
+        z-index: 1;
+        box-shadow:  0 10px 0 white;
+        transition: 0.5s;
+    }
+    .toggle::after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: white;
+        z-index: 1;
+        transition: 0.5s;
+
+}
+
+header,
+header.sticky {
+    padding: 5px 50px;
+    background: black;
+}
+
+header ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: auto;
+    background: #000;
+    visibility:hidden ;
+    opacity: 0;
+}
+
+
+header.active ul {
+    visibility:visible ;
+    opacity: 1;
+    display: block;
+    padding-top: 20px;
+}
+
+header.active ul li a {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+
+header .logo,
+header ul li a {
+    color: #fff;
+
+}
+
+.banner {
+    background-position: center;
+}
+
+.banner h2 {
+    font-size: 60px;
+    padding: 0 50px;
+}
+
+.sec {
+    padding: 310px 20px 20px 20px;
+}
+
+.services .box {
+    width: 100%;
+
+}
+
+.row100{
+    flex-direction: column;
+}
+
+.formContacto .row100 .inputBx50,
+.formContacto .row100 .inputBx100 {
+    width: 100%;
+    margin: 0;
+}
+
+.ubicacion{
+    padding: 380px 20px 20px 20px;
+}
+
+.contacto {
+    padding: 500px 20px 20px 20px;
+}
+
+.sci {
+    margin: 20px;
+}
+
+.sci ul li a img {
+    font-size:24px ;
+
+}
+
+
+h3 {
+    font-size: 36px;
+}
+}
